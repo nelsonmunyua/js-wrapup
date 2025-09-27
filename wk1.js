@@ -103,3 +103,18 @@ if (age >= 16) {
 
 canWork;
 
+// && and || operators
+console.log(0 && false) //return the first evaluation that is false ->0
+console.log(0 && true) //returns the first evaluation that is false ->0
+console.log(true && NaN) // return ->NaN
+console.log(true && !1) // false
+console.log(!0 && "This is a string") // since the first evaluation is true it proccedes to evaluate the second returns -> "This is a string"
+console.log(!0 && "") // returns -> ""
+console.log(!0 && !!"")
+
+// Practice with || / OR
+console.log(0 || false) // evaluates and returns the first instance of truth value -> false
+console.log(true || false) //->true
+console.log(true || 1) // returns -> true
+console.log(!true || !false) // returns true
+console.log(!1 || !0) // returns -> true
