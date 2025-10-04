@@ -25,3 +25,13 @@ function updateDay(day) {
     h4.style.fontSize = '18px'
 }
 updateDay('Teusday');
+
+// Demonstration of DOMContent loading sequence
+
+document.addEventListener("DOMContentLoaded", function() {
+    console.log('The DOM has loaded');
+});
+
+console.log(
+    "fires before the DOMcontent is loaded"
+);
