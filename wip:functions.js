@@ -133,3 +133,11 @@ function dispatchTrip(drivers, selectionFn, start, destination) {
    return `Drivers assigned: ${assignedDrivers.join(", ")}. ${trip}`
 }
 console.log(dispatchTrip(drivers, selectingDrivers[0], 42, 50));
+
+function disptchTrip(drivers, selectionFn, start, destination) {
+    const assignedDrivers = selectionFn(drivers);
+    const trip = tripDescription(start, destination)
+
+   return `Drivers assigned: ${assignedDrivers.join(", ")}. ${trip}`
+}
+console.log(dispatchTrip(drivers, selectingDrivers[0], 42, 50));
